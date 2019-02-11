@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 
 import Header from './header';
 import './layout.css';
 
-const Layout = ({ children }) => (
+type Props = {
+  children: React.ReactNode;
+};
+
+const Layout = ({ children }: Props) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -28,11 +32,6 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
       </>
     )}

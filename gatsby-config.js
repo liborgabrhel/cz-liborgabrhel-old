@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Libor Gabrhel`,
+        short_name: `Libor_G`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -28,6 +28,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-extract-schema`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-tslint`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
