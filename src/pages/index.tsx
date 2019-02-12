@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from '../components/image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { theme } from '../theme';
 
 const IndexPage = () => (
@@ -57,11 +57,19 @@ const Meta = styled('span')`
   color: ${theme.color.brand1};
 `;
 
+const changeColor = keyframes`
+  0% {color: ${theme.color.brand1}}
+  25% {color: ${theme.color.brand2}}
+  50% {color: ${theme.color.brand3}}
+  75% {color: ${theme.color.brand2}}
+  100% {color: ${theme.color.brand1}}
+`;
+
 const Email = styled('a')`
   font-size: 16px;
   font-weight: ${theme.font.weight.medium};
   color: ${theme.color.dark};
   &:hover {
-    color: ${theme.color.brand2};
+    animation: ${changeColor} 6s ease-in-out infinite alternate;
   }
 `;
