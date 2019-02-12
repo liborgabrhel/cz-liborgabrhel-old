@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import { GlobalStyles } from './global-styles';
 
 type Props = {
   children: React.ReactNode;
@@ -18,7 +19,12 @@ const Layout = ({ children }: Props) => (
         }
       }
     `}
-    render={(data) => (<Main>{children}</Main>)}
+    render={(data) => (
+      <React.Fragment>
+        <GlobalStyles />
+        <Main>{children}</Main>
+      </React.Fragment>
+    )}
   />
 );
 
