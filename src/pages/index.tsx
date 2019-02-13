@@ -1,13 +1,13 @@
 import React from 'react';
 import { Image } from '../components/image';
-import Layout from '../components/layout';
+import { Layout } from '../components/layout';
 import SEO from '../components/seo';
 import styled, { keyframes } from 'styled-components';
 import { theme } from '../theme';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title={'About Me'} keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title={'About Me'} keywords={[`Libor`, `Gabrhel`, `front-end`, `front end`]} />
     <ContentContainer>
       <ImageContainer>
         <Image />

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cz-liborgabrhel",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal web page",
+  "version": "0.1.1",
+  "author": "Libor Gabrhel <gabrhel.libor@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.118",
     "gatsby-image": "^2.0.29",
@@ -36,10 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/liborgabrhel/cz-liborgabrhel"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/liborgabrhel/cz-liborgabrhel/issues"
   },
   "devDependencies": {
     "@types/node": "^10.12.24",

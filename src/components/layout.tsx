@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import { GlobalStyles } from './global-styles';
 
@@ -8,31 +6,12 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Layout = ({ children }: Props) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={(data) => (
-      <React.Fragment>
-        <GlobalStyles />
-        <Main>{children}</Main>
-      </React.Fragment>
-    )}
-  />
+export const Layout = ({ children }: Props) => (
+  <React.Fragment>
+    <GlobalStyles />
+    <Main>{children}</Main>
+  </React.Fragment>
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Layout;
 
 const Main = styled('main')`
   display: flex;
