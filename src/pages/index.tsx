@@ -24,16 +24,33 @@ const IndexPage = () => (
 export default IndexPage;
 
 const ContentContainer = styled('div')`
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px max-content;
+  grid-template-rows: 180px;
+  grid-template-areas: "avatar details";
+  grid-column-gap: 20px;
   position: relative;
   flex-direction: row;
   align-items: center;
+  
+  padding: 20px;
+  
+  @media screen and (max-width: 425px) {
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 180px max-content;
+    grid-template-areas: 
+      "avatar ."
+      "details details";
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+  }
 `;
 
 const ImageContainer = styled('div')`
   width: 180px;
   height: 180px;
   margin-right: 35px;
+  grid-area: avatar;
 `;
 
 const DetailContainer = styled('div')`
@@ -41,6 +58,8 @@ const DetailContainer = styled('div')`
   position: relative;
   flex-direction: column;
   align-items: flex-start;
+  align-self: center;
+  grid-area: details;
 `;
 
 const Name = styled('h1')`
