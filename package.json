@@ -2,7 +2,7 @@
   "name": "cz-liborgabrhel",
   "private": true,
   "description": "Personal web page",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Libor Gabrhel <gabrhel.libor@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.118",
