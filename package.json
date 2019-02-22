@@ -4,6 +4,7 @@
   "description": "Personal web page",
   "version": "0.1.2",
   "author": "Libor Gabrhel <gabrhel.libor@gmail.com>",
+  "homepage": "liborgabrhel.cz",
   "dependencies": {
     "gatsby": "^2.0.118",
     "gatsby-image": "^2.0.29",
@@ -17,6 +18,8 @@
     "gatsby-plugin-typescript": "^2.0.7",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-sharp": "^2.1.13",
+    "logrocket": "^0.6.19",
+    "logrocket-react": "^3.0.0",
     "prop-types": "^15.7.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",

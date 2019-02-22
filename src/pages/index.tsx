@@ -4,6 +4,9 @@ import { Layout } from '../components/layout';
 import SEO from '../components/seo';
 import styled, { keyframes } from 'styled-components';
 import { theme } from '../theme';
+import LogRocket from 'logrocket';
+
+LogRocket.init(`${process.env.GATSBY_LOGROCKET_APPID}`);
 
 const IndexPage = () => (
   <Layout>
@@ -38,7 +41,7 @@ const ContentContainer = styled('div')`
   @media screen and (max-width: 425px) {
     grid-template-columns: 180px 1fr;
     grid-template-rows: 180px max-content;
-    grid-template-areas: 
+    grid-template-areas:
       "avatar ."
       "details details";
     grid-column-gap: 0;
