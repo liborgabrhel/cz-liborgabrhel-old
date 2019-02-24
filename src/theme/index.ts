@@ -2,7 +2,8 @@ export type Theme = typeof theme;
 
 export const theme = {
   font: {
-    IBM_Plex_Sans: `'IBM Plex Sans', sans-serif`,
+    family: `'IBM Plex Sans', sans-serif`,
+    url: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&subset=latin-ext',
     weight: {
       regular: '400',
       medium: '500',

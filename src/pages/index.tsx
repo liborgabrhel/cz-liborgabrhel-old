@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from '../components/image';
 import { Layout } from '../components/layout';
-import SEO from '../components/seo';
+import { SEO } from '../components/seo';
 import styled, { keyframes } from 'styled-components';
 import { theme } from '../theme';
 import LogRocket from 'logrocket';

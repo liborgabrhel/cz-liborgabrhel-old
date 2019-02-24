@@ -2,11 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 import { theme } from '../theme';
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&subset=latin-ext');
+  @import url(${theme.font.url});
 
   * {
     box-sizing: border-box;
-    font-family: ${theme.font.IBM_Plex_Sans};
+    font-family: ${theme.font.family};
     font-size: 16px;
   }
   
