@@ -4,6 +4,11 @@ module.exports = {
     author: `Libor Gabrhel`,
     description: `Personal website`,
     siteUrl: `https://liborgabrhel.cz`,
+    profile: {
+      name: `Libor`,
+      surname: `Gabrhel`,
+      email: `gabrhel.libor@gmail.com`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
