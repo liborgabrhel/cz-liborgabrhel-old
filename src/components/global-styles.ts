@@ -21,4 +21,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     background-color: ${theme.color.light};
   }
+  
+  #___gatsby {
+    width: 100%;
+  }
 `;

@@ -1,12 +1,9 @@
 import React from 'react';
 import { Image } from '../components/image';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { SEO } from '../containers/seo';
 import styled from 'styled-components';
-import LogRocket from 'logrocket';
 import { ProfileDetail } from '../containers/profile-detail';
-
-LogRocket.init(`${process.env.GATSBY_LOGROCKET_APPID}`);
 
 const IndexPage = () => (
   <Layout>
