@@ -5,13 +5,14 @@ import { theme } from '../theme';
 type Props = {
   name: string;
   surname: string;
+  bio: string;
   email: string;
 };
 
 export const ProfileDetailTemplate = (props: Props) => (
   <DetailContainer>
     <Name>{`${props.name} ${props.surname}`}</Name>
-    <Meta> the bald, bearded man with front-end in his 🧬</Meta>
+    <Meta>{props.bio}</Meta>
     <Email href={`mailto:${props.email}`}>{props.email}</Email>
   </DetailContainer>
 );

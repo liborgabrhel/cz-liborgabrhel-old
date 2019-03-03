@@ -7,6 +7,7 @@ module.exports = {
     profile: {
       name: `Libor`,
       surname: `Gabrhel`,
+      bio: `the bald, bearded man with front-end in his 🧬`,
       email: `gabrhel.libor@gmail.com`,
     },
   },

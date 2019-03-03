@@ -12,6 +12,7 @@ type Data = {
       profile: {
         name: string;
         surname: string;
+        bio: string;
         email: string;
       };
     };
@@ -25,6 +26,7 @@ export const ProfileDetail = (props: Props) => (
       <ProfileDetailTemplate
         name={data.site.siteMetadata.profile.name}
         surname={data.site.siteMetadata.profile.surname}
+        bio={data.site.siteMetadata.profile.bio}
         email={data.site.siteMetadata.profile.email}
       />
     )}
@@ -38,6 +40,7 @@ const profileDataQuery = graphql`
         profile {
           name
           surname
+          bio
           email
         }
       }
