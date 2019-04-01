@@ -4,7 +4,17 @@
   "description": "Personal web page",
   "version": "0.1.2",
   "author": "Libor Gabrhel <gabrhel.libor@gmail.com>",
-  "homepage": "liborgabrhel.cz",
+  "homepage": "https://liborgabrhel.cz",
+  "license": "MIT",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
   "dependencies": {
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.29",
@@ -26,24 +36,6 @@
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/liborgabrhel/cz-liborgabrhel"
-  },
-  "bugs": {
-    "url": "https://github.com/liborgabrhel/cz-liborgabrhel/issues"
-  },
   "devDependencies": {
     "@types/node": "^10.12.27",
     "@types/react": "^16.8.4",
@@ -55,5 +47,12 @@
     "tslint-loader": "^3.5.4",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liborgabrhel/cz-liborgabrhel"
+  },
+  "bugs": {
+    "url": "https://github.com/liborgabrhel/cz-liborgabrhel/issues"
   }
 }
