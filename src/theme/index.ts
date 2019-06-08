@@ -1,5 +1,3 @@
-export type Theme = typeof theme;
-
 export const theme = {
   font: {
     family: `'IBM Plex Sans', sans-serif`,
