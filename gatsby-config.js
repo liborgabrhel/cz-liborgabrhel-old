@@ -36,7 +36,6 @@ module.exports = {
     },
     `gatsby-plugin-extract-schema`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-tslint`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
