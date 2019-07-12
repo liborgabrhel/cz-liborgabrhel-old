@@ -7,9 +7,7 @@ type Props = {
 };
 
 export const Header = (props: Props) => {
-  const {
-    siteTitle = '',
-  } = props;
+  const { siteTitle = '' } = props;
 
   return (
     <header
